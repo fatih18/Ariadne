@@ -57,8 +57,7 @@ public class MazeController : MonoBehaviour, Observable
                 {
                         Vector3 rotator = new Vector3(vmovement, 0.0f, -hmovement);
                         transform.Rotate(rotator * m_speed * Time.deltaTime);
-                        foreach (Observer o in m_observers)
-                                o.update(transform.rotation.eulerAngles);
+                        notifyObservers();
                 }
         }
 }
