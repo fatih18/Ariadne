@@ -2,10 +2,6 @@
 // @author Omar Huseynov
 // @date 17th May 2020
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Principal;
 using UnityEngine;
 
 public class MazeGenerator : MonoBehaviour
@@ -100,6 +96,7 @@ public class MazeGenerator : MonoBehaviour
                 mesh.vertices = vertices;
                 mesh.triangles = triangles;
                 mesh.RecalculateNormals();
+
                 return mesh;
         }
 

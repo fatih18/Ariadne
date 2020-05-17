@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// @desc Maze Controller Algorithm
+// @author Omar Huseynov
+// @date 17th May 2020
+
 using System.Collections.Generic;
 using UnityEngine;
 

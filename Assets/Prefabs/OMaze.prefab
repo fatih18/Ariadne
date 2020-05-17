@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ed0688a22d01c4e9823ff083db6cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_numRings: 5
+  m_numRings: 10
   m_distanceDelta: 1.5
   m_fatness: 1
-  m_numSides: 5
+  m_numSides: 10
   m_height: 0
   m_mazeMaterial: {fileID: 2100000, guid: f93e0f8da5416964e997814133573968, type: 2}
 --- !u!114 &449790136652539935
