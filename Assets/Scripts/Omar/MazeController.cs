@@ -5,11 +5,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Observer
-{
-        void update(Vector3 mazeOrientation);
-}
-
 public interface Observable
 {
         void addObserver(Observer o);

@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public interface Observer
+{
+    void update(Vector3 mazeOrientation);
+}
+
+public class PlayerController : MonoBehaviour, Observer
 {
     public float speed = 6.0F;
     public float gravity = 1.0F;
@@ -34,5 +39,9 @@ public class PlayerController : MonoBehaviour
         moveDirection.y -= gravity * Time.deltaTime;
         // Move Character Controller
         _controller.Move(moveDirection * Time.deltaTime);
+    }
+
+    public void update(Vector3 MazeOrientation) {
+          //TODO Tarik, character movement
     }
 }
